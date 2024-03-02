@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/login_lbl_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_field_username" />
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_lbl_username"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/login_lbl_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_username"
+        android:text="@string/label_field_password" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_lbl_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_password"
+        android:text="@string/label_button_login" />
+
+    <Button
+        android:id="@+id/login_signup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_login"
+        android:text="@string/label_button_signup" />
+
+</RelativeLayout>

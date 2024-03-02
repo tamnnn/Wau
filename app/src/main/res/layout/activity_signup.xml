@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/signup_lbl_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_field_name" />
+
+    <EditText
+        android:id="@+id/signup_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_lbl_name"
+        android:inputType="textCapWords" />
+
+    <TextView
+        android:id="@+id/signup_lbl_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_name"
+        android:text="@string/label_field_phone" />
+
+    <EditText
+        android:id="@+id/signup_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_lbl_phone"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/signup_lbl_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_phone"
+        android:text="@string/label_field_username" />
+
+    <EditText
+        android:id="@+id/signup_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_lbl_username"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/signup_lbl_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_username"
+        android:text="@string/label_field_password" />
+
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_lbl_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signup_signup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_password"
+        android:text="@string/label_button_signup" />
+
+</RelativeLayout>
